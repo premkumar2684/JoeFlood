@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Joe flood Application automation test suite">
+	<listeners>
+		<listener
+			class-name="com.joeflood.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+	<test name="Joe Flood Application Test Cases">
+		<classes>
+			<class name="com.joeflood.qa.testcases.HomePageTest"></class>
+			<class name="com.joeflood.qa.testcases.LoginPageTest"></class>
+			<class name="com.joeflood.qa.testcases.EnrollmentPageTest"></class>
+			<class name="com.joeflood.qa.testcases.SubmissionPageTest"></class>
+			<class name="com.joeflood.qa.testcases.MyAccountPageTest"></class>
+			<class name="com.joeflood.qa.testcases.DashboardPageTest"></class>
+			<class name="com.joeflood.qa.testcases.EnrollmentPageTest"></class>
+			<class name="com.joeflood.qa.testcases.UserPageTest"></class>
+
+		</classes>
+	</test>
+</suite>

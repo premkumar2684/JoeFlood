@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Joe flood Application automation test suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.joeflood.qa.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Joe Flood Application Test Cases(failed)">
+    <classes>
+      <class name="com.joeflood.qa.testcases.MyAccountPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="setExtent"/>
+          <include name="changePassword"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.joeflood.qa.testcases.MyAccountPageTest -->
+      <class name="com.joeflood.qa.testcases.SubmissionPageTest">
+        <methods>
+          <include name="QuoteDownloadTest"/>
+          <include name="CreateSubmissionTest"/>
+          <include name="setExtent"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="DeleteSubmissionFormTest"/>
+          <include name="GetQuoteTest"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- com.joeflood.qa.testcases.SubmissionPageTest -->
+      <class name="com.joeflood.qa.testcases.DashboardPageTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+          <include name="setExtent"/>
+          <include name="setUp"/>
+          <include name="verifyDashboardPageTitleTest"/>
+        </methods>
+      </class> <!-- com.joeflood.qa.testcases.DashboardPageTest -->
+      <class name="com.joeflood.qa.testcases.UserPageTest">
+        <methods>
+          <include name="CreateAgencyTest"/>
+          <include name="EditAgentTest"/>
+          <include name="endReport"/>
+          <include name="setExtent"/>
+          <include name="setUp"/>
+          <include name="DeleteAgencyTest"/>
+          <include name="tearDown"/>
+          <include name="CreateAgentTest"/>
+          <include name="DeleteAgentTest"/>
+          <include name="EditAgencyTest"/>
+        </methods>
+      </class> <!-- com.joeflood.qa.testcases.UserPageTest -->
+      <class name="com.joeflood.qa.testcases.EnrollmentPageTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+          <include name="agencyEnrollmentMethodTest" invocation-numbers="0 1"/>
+          <include name="setExtent"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.joeflood.qa.testcases.EnrollmentPageTest -->
+    </classes>
+  </test> <!-- Joe Flood Application Test Cases(failed) -->
+</suite> <!-- Failed suite [Joe flood Application automation test suite] -->

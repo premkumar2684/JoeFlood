@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="com.joeflood.qa.testcases.EnrollmentPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="agencyEnrollmentMethodTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.joeflood.qa.testcases.EnrollmentPageTest -->
+      <class name="com.joeflood.qa.testcases.UserPageTest">
+        <methods>
+          <include name="CreateAgencyTest"/>
+          <include name="EditAgentTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="CreateAgentTest"/>
+          <include name="DeleteAgentTest"/>
+          <include name="EditAgencyTest"/>
+          <include name="DeleteJFIUserTest"/>
+        </methods>
+      </class> <!-- com.joeflood.qa.testcases.UserPageTest -->
+      <class name="com.joeflood.qa.testcases.SubmissionPageTest">
+        <methods>
+          <include name="CreateSubmissionTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="DeleteSubmissionFormTest"/>
+        </methods>
+      </class> <!-- com.joeflood.qa.testcases.SubmissionPageTest -->
+      <class name="com.joeflood.qa.testcases.DashboardPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Logout"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.joeflood.qa.testcases.DashboardPageTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

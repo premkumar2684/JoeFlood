@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="5" total="26" passed="11" failed="10" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-01-27T19:05:39 IST" name="Command line suite" finished-at="2022-01-27T19:14:17 IST" duration-ms="517792">
+    <groups>
+    </groups>
+    <test started-at="2022-01-27T19:05:39 IST" name="Command line test" finished-at="2022-01-27T19:14:17 IST" duration-ms="517792">
+      <class name="com.joeflood.qa.testcases.MyAccountPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.joeflood.qa.testcases.MyAccountPageTest@15c43bd9]" started-at="2022-01-27T19:07:41 IST" name="setUp" finished-at="2022-01-27T19:07:49 IST" duration-ms="7799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="changePassword()[pri:1, instance:com.joeflood.qa.testcases.MyAccountPageTest@15c43bd9]" started-at="2022-01-27T19:07:49 IST" name="changePassword" finished-at="2022-01-27T19:07:58 IST" duration-ms="9344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changePassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.joeflood.qa.testcases.MyAccountPageTest@15c43bd9]" started-at="2022-01-27T19:07:58 IST" name="tearDown" finished-at="2022-01-27T19:07:58 IST" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.joeflood.qa.testcases.MyAccountPageTest -->
+      <class name="com.joeflood.qa.testcases.SubmissionPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.joeflood.qa.testcases.SubmissionPageTest@3d74bf60]" started-at="2022-01-27T19:07:58 IST" name="setUp" finished-at="2022-01-27T19:08:06 IST" duration-ms="7759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="CreateSubmissionTest()[pri:1, instance:com.joeflood.qa.testcases.SubmissionPageTest@3d74bf60]" started-at="2022-01-27T19:08:06 IST" name="CreateSubmissionTest" finished-at="2022-01-27T19:09:26 IST" duration-ms="80295" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[contains(text(),'Personal')]' (tried for 20 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[contains(text(),'Personal')]' (tried for 20 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+at com.joeflood.qa.pages.SubmissionPage.CreateSubmissionMethod(SubmissionPage.java:145)
+at com.joeflood.qa.testcases.SubmissionPageTest.CreateSubmissionTest(SubmissionPageTest.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Personal')]"}
+  (Session info: chrome=97.0.4692.71)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'WLA20FXJ', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\105189\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53445}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c7b7a18ce5a2e60449647daa90e2e1d
+*** Element info: {Using=xpath, value=//*[contains(text(),'Personal')]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateSubmissionTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.joeflood.qa.testcases.SubmissionPageTest@3d74bf60]" started-at="2022-01-27T19:09:46 IST" name="setUp" finished-at="2022-01-27T19:09:55 IST" duration-ms="8265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="EditSubmissionFormTest()[pri:2, instance:com.joeflood.qa.testcases.SubmissionPageTest@3d74bf60]" started-at="2022-01-27T19:09:55 IST" name="EditSubmissionFormTest" finished-at="2022-01-27T19:10:03 IST" duration-ms="8478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditSubmissionFormTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.joeflood.qa.testcases.SubmissionPageTest@3d74bf60]" started-at="2022-01-27T19:10:19 IST" name="setUp" finished-at="2022-01-27T19:10:28 IST" duration-ms="8546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DeleteSubmissionFormTest()[pri:3, instance:com.joeflood.qa.testcases.SubmissionPageTest@3d74bf60]" started-at="2022-01-27T19:10:28 IST" name="DeleteSubmissionFormTest" finished-at="2022-01-27T19:10:34 IST" duration-ms="6177" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Submission Form deletion is not Sucessfull did not expect to find [Submission Deleted Successfully] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Submission Form deletion is not Sucessfull did not expect to find [Submission Deleted Successfully] but found []
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at com.joeflood.qa.testcases.SubmissionPageTest.DeleteSubmissionFormTest(SubmissionPageTest.java:70)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteSubmissionFormTest -->
+      </class> <!-- com.joeflood.qa.testcases.SubmissionPageTest -->
+      <class name="com.joeflood.qa.testcases.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.joeflood.qa.testcases.LoginPageTest@41e36e46]" started-at="2022-01-27T19:07:29 IST" name="setUp" finished-at="2022-01-27T19:07:37 IST" duration-ms="7928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest()[pri:1, instance:com.joeflood.qa.testcases.LoginPageTest@41e36e46]" started-at="2022-01-27T19:07:37 IST" name="loginTest" finished-at="2022-01-27T19:07:41 IST" duration-ms="3959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.joeflood.qa.testcases.LoginPageTest@41e36e46]" started-at="2022-01-27T19:07:41 IST" name="tearDown" finished-at="2022-01-27T19:07:41 IST" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.joeflood.qa.testcases.LoginPageTest -->
+      <class name="com.joeflood.qa.testcases.ExtentReportScreenshotTest">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.joeflood.qa.testcases.ExtentReportScreenshotTest@3911c2a7]" started-at="2022-01-27T19:05:39 IST" name="setExtent" finished-at="2022-01-27T19:05:40 IST" duration-ms="561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.joeflood.qa.testcases.ExtentReportScreenshotTest@3911c2a7]" started-at="2022-01-27T19:07:10 IST" name="setUp" finished-at="2022-01-27T19:07:19 IST" duration-ms="8263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginPageTitleTest()[pri:1, instance:com.joeflood.qa.testcases.ExtentReportScreenshotTest@3911c2a7]" started-at="2022-01-27T19:07:19 IST" name="loginPageTitleTest" finished-at="2022-01-27T19:07:19 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.joeflood.qa.testcases.ExtentReportScreenshotTest@3911c2a7]" started-at="2022-01-27T19:07:19 IST" name="tearDown" finished-at="2022-01-27T19:07:19 IST" duration-ms="193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginPageTitleTest status=SUCCESS method=ExtentReportScreenshotTest.loginPageTitleTest()[pri:1, instance:com.joeflood.qa.testcases.ExtentReportScreenshotTest@3911c2a7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.joeflood.qa.testcases.ExtentReportScreenshotTest@3911c2a7]" started-at="2022-01-27T19:09:38 IST" name="setUp" finished-at="2022-01-27T19:09:46 IST" duration-ms="8277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="crmLogoImageTest()[pri:2, instance:com.joeflood.qa.testcases.ExtentReportScreenshotTest@3911c2a7]" started-at="2022-01-27T19:09:46 IST" name="crmLogoImageTest" finished-at="2022-01-27T19:09:46 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crmLogoImageTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.joeflood.qa.testcases.ExtentReportScreenshotTest@3911c2a7]" started-at="2022-01-27T19:09:46 IST" name="tearDown" finished-at="2022-01-27T19:09:46 IST" duration-ms="182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=crmLogoImageTest status=SUCCESS method=ExtentReportScreenshotTest.crmLogoImageTest()[pri:2, instance:com.joeflood.qa.testcases.ExtentReportScreenshotTest@3911c2a7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.joeflood.qa.testcases.ExtentReportScreenshotTest@3911c2a7]" started-at="2022-01-27T19:14:17 IST" name="endReport" finished-at="2022-01-27T19:14:17 IST" duration-ms="469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.joeflood.qa.testcases.ExtentReportScreenshotTest -->
+      <class name="com.joeflood.qa.testcases.UserPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.joeflood.qa.testcases.UserPageTest@4f209819]" started-at="2022-01-27T19:09:26 IST" name="setUp" finished-at="2022-01-27T19:09:34 IST" duration-ms="8291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="UsersPageTitleTest()[pri:1, instance:com.joeflood.qa.testcases.UserPageTest@4f209819]" started-at="2022-01-27T19:09:34 IST" name="UsersPageTitleTest" finished-at="2022-01-27T19:09:38 IST" duration-ms="3454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UsersPageTitleTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.joeflood.qa.testcases.UserPageTest@4f209819]" started-at="2022-01-27T19:10:03 IST" name="setUp" finished-at="2022-01-27T19:10:11 IST" duration-ms="7625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="CreateJFIUserTest()[pri:2, instance:com.joeflood.qa.testcases.UserPageTest@4f209819]" started-at="2022-01-27T19:10:11 IST" name="CreateJFIUserTest" finished-at="2022-01-27T19:10:19 IST" duration-ms="8720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateJFIUserTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.joeflood.qa.testcases.UserPageTest@4f209819]" started-at="2022-01-27T19:10:34 IST" name="setUp" finished-at="2022-01-27T19:10:43 IST" duration-ms="9201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DeleteJFIUserTest()[pri:3, instance:com.joeflood.qa.testcases.UserPageTest@4f209819]" started-at="2022-01-27T19:10:43 IST" name="DeleteJFIUserTest" finished-at="2022-01-27T19:10:49 IST" duration-ms="5565" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[JFIUser deletion is not Sucessfull did not expect to find [Deleted Successfully] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: JFIUser deletion is not Sucessfull did not expect to find [Deleted Successfully] but found []
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at com.joeflood.qa.testcases.UserPageTest.DeleteJFIUserTest(UserPageTest.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteJFIUserTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.joeflood.qa.testcases.UserPageTest@4f209819]" started-at="2022-01-27T19:10:49 IST" name="setUp" finished-at="2022-01-27T19:10:58 IST" duration-ms="9334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="EditJFIUserTest()[pri:4, instance:com.joeflood.qa.testcases.UserPageTest@4f209819]" started-at="2022-01-27T19:10:58 IST" name="EditJFIUserTest" finished-at="2022-01-27T19:11:03 IST" duration-ms="5071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditJFIUserTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.joeflood.qa.testcases.UserPageTest@4f209819]" started-at="2022-01-27T19:11:03 IST" name="setUp" finished-at="2022-01-27T19:11:12 IST" duration-ms="8676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="CreateAgencyTest()[pri:5, instance:com.joeflood.qa.testcases.UserPageTest@4f209819]" started-at="2022-01-27T19:11:12 IST" name="CreateAgencyTest" finished-at="2022-01-27T19:12:26 IST" duration-ms="73978" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[contains(text(),'Yes')]' (tried for 20 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[contains(text(),'Yes')]' (tried for 20 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+at com.joeflood.qa.pages.UsersPage.createAgencyMethod(UsersPage.java:317)
+at com.joeflood.qa.testcases.UserPageTest.CreateAgencyTest(UserPageTest.java:97)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Yes')]"}
+  (Session info: chrome=97.0.4692.71)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'WLA20FXJ', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\105189\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53809}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f3375abbcb5a2e20bf1afb10646258d9
+*** Element info: {Using=xpath, value=//*[contains(text(),'Yes')]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateAgencyTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.joeflood.qa.testcases.UserPageTest@4f209819]" started-at="2022-01-27T19:12:26 IST" name="setUp" finished-at="2022-01-27T19:12:36 IST" duration-ms="10409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="EditAgencyTest()[pri:6, instance:com.joeflood.qa.testcases.UserPageTest@4f209819]" started-at="2022-01-27T19:12:36 IST" name="EditAgencyTest" finished-at="2022-01-27T19:13:12 IST" duration-ms="35775" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='zipCode']"}
+  (Session info: chrome=97.0.4692.71)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'WLA20FXJ', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\105189\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3ae0f377f05f2ee9f462b886775c28ff
+*** Element info: {Using=name, value=zipCode}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='zipCode']"}
+  (Session info: chrome=97.0.4692.71)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'WLA20FXJ', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\105189\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3ae0f377f05f2ee9f462b886775c28ff
+*** Element info: {Using=name, value=zipCode}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
+at com.joeflood.qa.pages.UsersPage.editAgencyMethod(UsersPage.java:449)
+at com.joeflood.qa.testcases.UserPageTest.EditAgencyTest(UserPageTest.java:117)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditAgencyTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.joeflood.qa.testcases.UserPageTest@4f209819]" started-at="2022-01-27T19:13:12 IST" name="setUp" finished-at="2022-01-27T19:13:21 IST" duration-ms="8853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DeleteAgencyTest()[pri:7, instance:com.joeflood.qa.testcases.UserPageTest@4f209819]" started-at="2022-01-27T19:13:21 IST" name="DeleteAgencyTest" finished-at="2022-01-27T19:13:28 IST" duration-ms="6488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteAgencyTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.joeflood.qa.testcases.UserPageTest@4f209819]" started-at="2022-01-27T19:13:28 IST" name="setUp" finished-at="2022-01-27T19:13:39 IST" duration-ms="10962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="CreateAgentTest()[pri:8, instance:com.joeflood.qa.testcases.UserPageTest@4f209819]" started-at="2022-01-27T19:13:39 IST" name="CreateAgentTest" finished-at="2022-01-27T19:13:47 IST" duration-ms="8302" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Home page title is not matched did not expect to find [Users | Joe flood] but found [User-create | Joe flood]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Home page title is not matched did not expect to find [Users | Joe flood] but found [User-create | Joe flood]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at com.joeflood.qa.testcases.UserPageTest.CreateAgentTest(UserPageTest.java:147)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateAgentTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.joeflood.qa.testcases.UserPageTest@4f209819]" started-at="2022-01-27T19:13:47 IST" name="setUp" finished-at="2022-01-27T19:13:56 IST" duration-ms="8769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="EditAgentTest()[pri:9, instance:com.joeflood.qa.testcases.UserPageTest@4f209819]" started-at="2022-01-27T19:13:56 IST" name="EditAgentTest" finished-at="2022-01-27T19:14:02 IST" duration-ms="6171" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[JFIUser deletion is not Sucessfull did not expect to find [Deleted Successfully] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: JFIUser deletion is not Sucessfull did not expect to find [Deleted Successfully] but found []
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at com.joeflood.qa.testcases.UserPageTest.EditAgentTest(UserPageTest.java:161)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditAgentTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.joeflood.qa.testcases.UserPageTest@4f209819]" started-at="2022-01-27T19:14:02 IST" name="setUp" finished-at="2022-01-27T19:14:11 IST" duration-ms="8781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DeleteAgentTest()[pri:10, instance:com.joeflood.qa.testcases.UserPageTest@4f209819]" started-at="2022-01-27T19:14:11 IST" name="DeleteAgentTest" finished-at="2022-01-27T19:14:17 IST" duration-ms="5985" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[User deletion is not Sucessfull did not expect to find [Agent Deleted Successfully] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: User deletion is not Sucessfull did not expect to find [Agent Deleted Successfully] but found []
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at com.joeflood.qa.testcases.UserPageTest.DeleteAgentTest(UserPageTest.java:174)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteAgentTest -->
+      </class> <!-- com.joeflood.qa.testcases.UserPageTest -->
+      <class name="com.joeflood.qa.testcases.EnrollmentPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.joeflood.qa.testcases.EnrollmentPageTest@4facf68f]" started-at="2022-01-27T19:05:40 IST" name="setUp" finished-at="2022-01-27T19:05:48 IST" duration-ms="8653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyEnrollmentPageTitleTest()[pri:0, instance:com.joeflood.qa.testcases.EnrollmentPageTest@4facf68f]" started-at="2022-01-27T19:05:48 IST" name="verifyEnrollmentPageTitleTest" finished-at="2022-01-27T19:05:49 IST" duration-ms="323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEnrollmentPageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.joeflood.qa.testcases.EnrollmentPageTest@4facf68f]" started-at="2022-01-27T19:05:49 IST" name="tearDown" finished-at="2022-01-27T19:05:49 IST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.joeflood.qa.testcases.EnrollmentPageTest@4facf68f]" started-at="2022-01-27T19:06:31 IST" name="setUp" finished-at="2022-01-27T19:06:39 IST" duration-ms="8064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="agencyEnrollmentMethodTest()[pri:1, instance:com.joeflood.qa.testcases.EnrollmentPageTest@4facf68f]" started-at="2022-01-27T19:06:39 IST" name="agencyEnrollmentMethodTest" finished-at="2022-01-27T19:07:10 IST" duration-ms="31273" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (0eb62935fbd3abe339592af695979f58)] -> xpath: //input[@name='otp']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'WLA20FXJ', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\105189\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53269}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0eb62935fbd3abe339592af695979f58]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (0eb62935fbd3abe339592af695979f58)] -> xpath: //input[@name='otp']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'WLA20FXJ', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\105189\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53269}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0eb62935fbd3abe339592af695979f58
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+at com.joeflood.qa.pages.EnrollmentPage.agencyEnrollmentMethod(EnrollmentPage.java:147)
+at com.joeflood.qa.testcases.EnrollmentPageTest.agencyEnrollmentMethodTest(EnrollmentPageTest.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agencyEnrollmentMethodTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.joeflood.qa.testcases.EnrollmentPageTest@4facf68f]" started-at="2022-01-27T19:07:10 IST" name="tearDown" finished-at="2022-01-27T19:07:10 IST" duration-ms="234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.joeflood.qa.testcases.EnrollmentPageTest -->
+      <class name="com.joeflood.qa.testcases.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.joeflood.qa.testcases.HomePageTest@76508ed1]" started-at="2022-01-27T19:07:19 IST" name="setUp" finished-at="2022-01-27T19:07:26 IST" duration-ms="7674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHomePageTitleTest()[pri:1, instance:com.joeflood.qa.testcases.HomePageTest@76508ed1]" started-at="2022-01-27T19:07:26 IST" name="verifyHomePageTitleTest" finished-at="2022-01-27T19:07:28 IST" duration-ms="2021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.joeflood.qa.testcases.HomePageTest@76508ed1]" started-at="2022-01-27T19:07:28 IST" name="tearDown" finished-at="2022-01-27T19:07:29 IST" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.joeflood.qa.testcases.HomePageTest -->
+      <class name="com.joeflood.qa.testcases.DashboardPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.joeflood.qa.testcases.DashboardPageTest@4ac3c60d]" started-at="2022-01-27T19:05:49 IST" name="setUp" finished-at="2022-01-27T19:05:57 IST" duration-ms="7990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Logout()[pri:1, instance:com.joeflood.qa.testcases.DashboardPageTest@4ac3c60d]" started-at="2022-01-27T19:05:57 IST" name="Logout" finished-at="2022-01-27T19:06:30 IST" duration-ms="33496" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=97.0.4692.71)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'WLA20FXJ', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\105189\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53217}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 69e1df0a0bf19bd413fc995e48828ae9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=97.0.4692.71)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'WLA20FXJ', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\105189\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53217}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 69e1df0a0bf19bd413fc995e48828ae9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at com.joeflood.qa.pages.DashboardPage.logoutTest(DashboardPage.java:54)
+at com.joeflood.qa.testcases.DashboardPageTest.Logout(DashboardPageTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.joeflood.qa.testcases.DashboardPageTest@4ac3c60d]" started-at="2022-01-27T19:06:30 IST" name="tearDown" finished-at="2022-01-27T19:06:31 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.joeflood.qa.testcases.DashboardPageTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
